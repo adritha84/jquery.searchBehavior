@@ -61,15 +61,3 @@
 }
 
 @imports "imports";
-/* line 4, ../scss/style.scss */
-.main-content {
-  background-color: #f5f5f5;
-}
-
-/* line 8, ../scss/style.scss */
-.search_results {
-  background-color: #fff;
-  padding: 10em;
-  border: 1px solid black;
-  display: none;
-}

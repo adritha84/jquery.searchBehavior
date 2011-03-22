@@ -1,19 +1,5 @@
-/***************************************************/
-
-@import "compass/css3/background-clip";
-@import "compass/css3/border-radius";
-@import "compass/css3/box";
-@import "compass/css3/box-shadow";
-@import "compass/css3/box-sizing";
-@import "compass/css3/gradient";
-@import "compass/css3/text-shadow";
-@import "compass/utilities/general/clearfix";
-@import "compass/utilities/general/float";
-@import "compass/reset/utilities";
-
-/***************************************************/
 @import "search";
-/***************************************************/
+@imports "imports";
 
 .main-content {
 	background-color: #f5f5f5;
