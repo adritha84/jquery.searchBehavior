@@ -37,6 +37,8 @@ jQuery.fn.searchBehavior = function() {
 		alert("You have used the search widget!");
 		updateClearSearch();
     });
+	
+	search.bind("paste", function() {});
 };
 
   
