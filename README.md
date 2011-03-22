@@ -6,8 +6,10 @@ This widget is implemented using jquery and css3 (with compass library).
 # Installation
 
 In order to install/compile the widget, just save this repo's archive to your computer and open the "index.html" file in your browser...
-...or if you want to test it first, follow the demo link: [linkref]: http://goo.gl/Ovnhu "jquery.searchBehavior DEMO"
+...or if you want to test it first, follow the demo link below. 
 
-# Demo
-[linkref]: http://goo.gl/Ovnhu "jquery.searchBehavior DEMO"
+
+# Demo link
+
+http://goo.gl/Ovnhu
 
