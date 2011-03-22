@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/tr/html4.01/loose.dtd"> 
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Search field</title>
+<link rel="stylesheet" href="stylesheets/style.css" media="screen" />
+<script type="text/javascript" src="javascripts/jquery.js"></script>
+<script type="text/javascript" src="javascripts/jquery.searchBehavior.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="stylesheets/ie.css" media="screen" />
+<![endif]-->
+</head>
+
+<body class="main-content">
+<h1>Search widget</h1>
+
+<div class="search_field_container">
+<input type="image" class="submit_search" src="images/magnifier.png"/>
+<input type="search" class="search_field" name="search" />
+<img class="clear_search" src="images/clear.png"/>
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	$('.search_field_container').searchBehavior();
+</script>
