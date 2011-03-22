@@ -1,2 +1,26 @@
 @import "search";
 @imports "imports";
+
+$images-root: "/images/";
+$htc-root: "/htc/";
+
+@mixin gradient-filter($top-color, $bottom-color) {
+    $path_to_gradient: $images_root + 'grey-gradient.png';
+    background-image: url($path_to_gradient); /* fallback background image */
+    background-repeat: repeat-x;
+    
+	background-color: $top-color;  /* fallback background color */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$top-color}, endColorstr=#{$bottom-color});
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$top-color}, endColorstr=#{$bottom-color})";    
+}
+
+.search_field_container {
+	@include gradient-filter(#fdfdfd, #dfdfdf);    
+	
+	/*
+	.search_field {		
+		behavior: url(border-radius.htc);
+		border-radius: 20px;
+	}
+	*/
+}

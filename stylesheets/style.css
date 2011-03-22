@@ -1,5 +1,11 @@
 /* Compass imports */
-/* line 3, ../scss/_search.scss */
+/* Remove the default cancel  (x) button - webkit search input */
+/* line 25, ../scss/_search.scss */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 29, ../scss/_search.scss */
 .search_field_container {
   border: 1px solid #cacaca;
   margin: 0;
@@ -7,35 +13,41 @@
   width: 250px;
   height: 50px;
   position: relative;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #cacaca));
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #cacaca 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #cacaca 100%);
+  background-color: white;
+  /* fallback background color */
+  background-image: url("/images/table-header-gradient.png");
+  /* fallback background image */
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, white, #cacaca);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #cacaca));
+  background-image: -webkit-linear-gradient(white, #cacaca);
+  background-image: -o-linear-gradient(white, #cacaca);
+  background-image: linear-gradient(top, white, #cacaca);
 }
-/* line 13, ../scss/_search.scss */
+/* line 39, ../scss/_search.scss */
 .search_field_container .search_field {
-  background-color: #fff;
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
-  -o-border-radius: 1em;
-  -ms-border-radius: 1em;
-  -khtml-border-radius: 1em;
   border-radius: 1em;
-  border-top: 1px solid #999999;
-  border-bottom: 1px solid #F1F1F1;
-  border-left: 1px solid #D4D4D4;
-  border-right: 1px solid #D4D4D4;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
   -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+  /* @include box-shadow();	      */
+  background-color: #fff;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #F1F1F1;
+  border-left: 1px solid #D4D4D4;
+  border-right: 1px solid #D4D4D4;
   width: 200px;
+  /* width: 100%; */
   height: 24px;
   max-width: 100%;
   margin-top: 10px;
   padding-left: 25px;
   padding-right: 25px;
 }
-/* line 28, ../scss/_search.scss */
+/* line 58, ../scss/_search.scss */
 .search_field_container .clear_search {
   left: 100%;
   margin-left: -45px;
@@ -43,7 +55,7 @@
   top: 27px;
   cursor: pointer;
 }
-/* line 36, ../scss/_search.scss */
+/* line 66, ../scss/_search.scss */
 .search_field_container .submit_search {
   right: 100%;
   margin-right: -47.5px;
@@ -51,7 +63,7 @@
   top: 26px;
   cursor: pointer;
 }
-/* line 44, ../scss/_search.scss */
+/* line 74, ../scss/_search.scss */
 .search_field_container .input_spinner {
   left: 100%;
   margin-left: -45px;

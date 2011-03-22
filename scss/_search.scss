@@ -1,5 +1,31 @@
 @import "imports";
 
+$images_root: "/images/";
+
+@mixin gradient($top-color, $bottom-color) {
+    background-color: $top-color;  /* fallback background color */
+    $path_to_gradient: $images_root + 'table-header-gradient.png';
+    background-image: url($path_to_gradient); /* fallback background image */
+    background-repeat: repeat-x;
+
+    background-image: -moz-linear-gradient(top, $top-color, $bottom-color);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $top-color),color-stop(1, $bottom-color));
+    background-image: -webkit-linear-gradient($top-color, $bottom-color);
+    background-image: -o-linear-gradient($top-color, $bottom-color);
+    background-image: linear-gradient(top, $top-color, $bottom-color);
+}
+
+@mixin rounded-corners($radius: 5px) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/* Remove the default cancel  (x) button - webkit search input */
+input[type="search"]::-webkit-search-cancel-button {   
+    -webkit-appearance: none;
+}
+
 .search_field_container {
     $images_root: '/images/';    
     border: 1px solid #cacaca;
@@ -7,18 +33,22 @@
     padding: 10px 25px;
     width: 250px;
     height: 50px;
-    position: relative;
-    @include linear-gradient(color-stops(#ffffff, #cacaca), top);
+    position: relative;    
+	@include gradient(#ffffff, #cacaca);
 
     .search_field {
-        background-color: #fff;
-        @include border-radius(1em);
-        border-top: 1px solid #999999;
-        border-bottom: 1px solid #F1F1F1;
-        border-left: 1px solid #D4D4D4;
-        border-right: 1px solid #D4D4D4;
-        @include box-shadow(rgba(0, 0, 0, 0.2) 0, 1px, 2px, 0, inset);
-        width: 200px;
+		@include rounded-corners(1em);
+		@include box-shadow(rgba(0, 0, 0, 0.2) 0, 1px, 2px, 0, inset);
+		/* @include box-shadow();	      */        
+		background-color: #fff;	        
+		border: {
+			top: 1px solid #999999;
+			bottom: 1px solid #F1F1F1;
+			left: 1px solid #D4D4D4;
+			right: 1px solid #D4D4D4;
+		}		
+		width: 200px;
+		/* width: 100%; */
         height: 24px;
         max-width: 100%;
         margin-top: 10px;
