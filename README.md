@@ -5,8 +5,8 @@ This widget is implemented using *jQuery*, *CSS3* (with *Compass* library) and *
 
 # Installation
 
-In order to install/compile the widget, just save this repo's archive to your computer and open the "index.html" file in your browser...
-...or if you want to test it first, follow the *demo link* below. 
+In order to install/compile the widget, just save this repo's archive to your computer and open the **index.html** file in your browser...
+...or if you want to test it first, follow the **demo link** below. 
 
 
 # Demo 
