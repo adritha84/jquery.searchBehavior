@@ -14,8 +14,8 @@ In order to install/compile the widget, just save this repo's archive to your co
 
 Include the necessary JavaScript files in your project: 
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/path/to/placeHoldize/jquery.searchBehavior.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.searchBehavior.js"></script>
 
 #### Fire the plug-in
 
