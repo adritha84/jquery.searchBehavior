@@ -9,9 +9,10 @@ In order to install/compile the widget, just save this repo's archive to your co
 ...or if you want to test it first, follow the *demo link* below. 
 
 
-# Demo link
+# Demo 
 
-[1]: http://goo.gl/Ovnhu "jquery.searchBehavior Demo"
+jquery.searchBehavior demo link: [demo](http://goo.gl/Ovnhu "jquery.searchBehavior demo")
+
 
 
 
