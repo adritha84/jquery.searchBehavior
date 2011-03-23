@@ -38,6 +38,7 @@ The search widget contains 3 elements:
 * *The search input*: where you write the search keywords;
 * *The magnifier button on the left side of the text field*: once you have written the keywords in the text input, you can click the magnifier on the left side of the text field (instead of pressing the Enter key) to launch the search action;
 * *The clear button on the right side of the text field*: this button becomes visible when there is text in the text field and its purpose is to clear the field;
+These 3 elements are placed in a nice container (`search_field_container`). 
 
 # Demo 
 
