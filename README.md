@@ -16,7 +16,7 @@ Include the necessary JavaScript files in your project:
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery.searchBehavior.js"></script>
 
-#### Fire the plug-in
+### Fire the plug-in
 
 Include the following code in your HTML file:
 
