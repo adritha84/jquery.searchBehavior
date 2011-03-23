@@ -1,7 +1,7 @@
 # Introduction
 
 This plugin makes your search inputs more usable as per Apple UI guidelines.  
-See the demo [demo](http://goo.gl/Ovnhu "jquery.searchBehavior demo").  
+See the [demo](http://goo.gl/Ovnhu "jquery.searchBehavior demo").  
 It's implemented using *jQuery*, *CSS3* (with *Compass* library) and *HTML5 :p*.  
 
 # Installation
@@ -41,9 +41,3 @@ The search widget contains 3 elements:
 * *The clear button on the right side of the text field*: this button becomes visible when there is text in the text field and its purpose is to clear the field;
 
 These 3 elements are placed in a nice container (`search_field_container`). 
-
-# Demo 
-
-jquery.searchBehavior demo link: [demo](http://goo.gl/Ovnhu "jquery.searchBehavior demo")
-
-
