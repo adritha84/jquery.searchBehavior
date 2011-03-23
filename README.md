@@ -24,7 +24,7 @@ Include the following code in your HTML file:
 	    $('.search_field_container').searchBehavior();
     </script>
 
-### Create the search field
+### Create the search widget
 
 **Example**
     <div class = "search_field_container">
@@ -33,7 +33,7 @@ Include the following code in your HTML file:
     <img class = "clear_search" src = "images/clear.png"/>
     </div>
 	
-The search field actially contains 3 elements: 
+The search widget contains 3 elements: 
 
 * *The search input*: where you write the search keywords;
 * *The magnifier button on the left side of the text field*: once you have written the keywords in the text input, you can click the magnifier on the left side of the text field (instead of pressing the Enter key) to launch the search action;
