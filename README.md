@@ -43,6 +43,6 @@ These 3 elements are placed in a nice container (`search_field_container`).
 
 # Demo 
 
-jquery.searchBehavior demo link: [demo](http://goo.gl/Ovnhu "jquery.searchBehavior demo")
+jquery.searchBehavior demo link: [demo](http://dl.dropbox.com/u/2927977/jquery.searchBehavior/index.html "jquery.searchBehavior demo")
 
 
