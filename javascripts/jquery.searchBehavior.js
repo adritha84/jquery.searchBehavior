@@ -21,7 +21,7 @@ jQuery.fn.searchBehavior = function() {
     search.keypress(function(e){
         if(e.keyCode==13) {        
             clear.hide();			
-			alert("You have used the search widget!");
+			alert( "Your search value: " + search.val());
 			updateClearSearch();
         }
     });
@@ -34,7 +34,7 @@ jQuery.fn.searchBehavior = function() {
     
     submit.click(function(){
         clear.hide();   
-		alert("You have used the search widget!");
+		alert( "Your search value: " + search.val());
 		updateClearSearch();
     });
 	

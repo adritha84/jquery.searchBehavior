@@ -12,15 +12,47 @@ $htc-root: "/htc/";
 	background-color: $top-color;  /* fallback background color */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$top-color}, endColorstr=#{$bottom-color});
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$top-color}, endColorstr=#{$bottom-color})";    
+	behavior: url('htc/PIE.htc');  
 }
 
 .search_field_container {
 	@include gradient-filter(#fdfdfd, #dfdfdf);    
 	
-	/*
-	.search_field {		
-		behavior: url(border-radius.htc);
+	.search_field {	
 		border-radius: 20px;
+		vertical-align: middle;
+		
+		behavior: url('htc/PIE.htc');  
 	}
-	*/
+	behavior: url('htc/PIE.htc');  
+}
+
+.title {
+	margin: {
+		top: 180px;
+		right: auto;
+		left: auto;
+	}
+	width: 330px;	
+	font: {
+		size: 30px;
+		weight: bold;
+		family: Arial;		
+	}
+	text-decoration: none;
+	color: #CCCCCC;
+	behavior: url('htc/PIE.htc');  
+}
+
+
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #ccc;
+   -webkit-box-shadow: inset 0 0 10px #ccc;
+    box-shadow:         inset 0 0 10px #ccc;
+	behavior: url('htc/PIE.htc');  
+}
+
+.txt-shadow { 
+	text-shadow: -1px -1px white, 1px 1px #333; 
+	behavior: url('htc/PIE.htc');  
 }

@@ -1,5 +1,4 @@
 @import "imports";
-
 $images_root: "/images/";
 
 @mixin gradient($top-color, $bottom-color) {
@@ -29,7 +28,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .search_field_container {
     $images_root: '/images/';    
     border: 1px solid #cacaca;
-    margin: 0;
+    margin: auto;
     padding: 10px 25px;
     width: 250px;
     height: 50px;
@@ -40,12 +39,12 @@ input[type="search"]::-webkit-search-cancel-button {
 		@include rounded-corners(1em);
 		@include box-shadow(rgba(0, 0, 0, 0.2) 0, 1px, 2px, 0, inset);		
 		background-color: #fff;	        
-		border: {
-			top: 1px solid #999999;
-			bottom: 1px solid #F1F1F1;
-			left: 1px solid #D4D4D4;
-			right: 1px solid #D4D4D4;
-		}		
+		border: 1px solid #ccc;
+		//inner shadow
+		-moz-box-shadow:    inset 0 0 2px #ccc;
+		-webkit-box-shadow: inset 0 0 2px #ccc;
+		box-shadow:         inset 0 0 2px #ccc;
+		
 		width: 200px;		
         height: 24px;
         max-width: 100%;
@@ -55,15 +54,15 @@ input[type="search"]::-webkit-search-cancel-button {
 
     .clear_search {
         left: 100%;
-        margin-left: -48px;
+        margin-left: -47.5px;
         position: absolute;
-        top: 24px;
+        top: 26px;
         cursor: pointer;
     }
 
     .submit_search {
         right: 100%;
-        margin-right: -47.5px;
+        margin-right: -46.5px;
         position: absolute;
         top: 26px;
         cursor: pointer;       

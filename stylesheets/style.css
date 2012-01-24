@@ -1,14 +1,14 @@
 /* Compass imports */
 /* Remove the default cancel  (x) button - webkit search input */
-/* line 25, ../scss/_search.scss */
+/* line 24, ../scss/_search.scss */
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 29, ../scss/_search.scss */
+/* line 28, ../scss/_search.scss */
 .search_field_container {
   border: 1px solid #cacaca;
-  margin: 0;
+  margin: auto;
   padding: 10px 25px;
   width: 250px;
   height: 50px;
@@ -22,22 +22,22 @@ input[type="search"]::-webkit-search-cancel-button {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #cacaca));
   background-image: -webkit-linear-gradient(white, #cacaca);
   background-image: -o-linear-gradient(white, #cacaca);
-  background-image: linear-gradient(top, white, #cacaca);
+  background-image: linear-gradient(top, #ffffff, #cacaca);
 }
-/* line 39, ../scss/_search.scss */
+/* line 38, ../scss/_search.scss */
 .search_field_container .search_field {
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
   border-radius: 1em;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0, 1px, 2px, 0, inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0, 1px, 2px, 0, inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0, 1px, 2px, 0, inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0, 1px, 2px, 0, inset;
   background-color: #fff;
-  border-top: 1px solid #999999;
-  border-bottom: 1px solid #F1F1F1;
-  border-left: 1px solid #D4D4D4;
-  border-right: 1px solid #D4D4D4;
+  border: 1px solid #ccc;
+  -moz-box-shadow: inset 0 0 2px #ccc;
+  -webkit-box-shadow: inset 0 0 2px #ccc;
+  box-shadow: inset 0 0 2px #ccc;
   width: 200px;
   height: 24px;
   max-width: 100%;
@@ -45,23 +45,23 @@ input[type="search"]::-webkit-search-cancel-button {
   padding-left: 25px;
   padding-right: 25px;
 }
-/* line 56, ../scss/_search.scss */
+/* line 55, ../scss/_search.scss */
 .search_field_container .clear_search {
   left: 100%;
-  margin-left: -48px;
-  position: absolute;
-  top: 24px;
-  cursor: pointer;
-}
-/* line 64, ../scss/_search.scss */
-.search_field_container .submit_search {
-  right: 100%;
-  margin-right: -47.5px;
+  margin-left: -47.5px;
   position: absolute;
   top: 26px;
   cursor: pointer;
 }
-/* line 72, ../scss/_search.scss */
+/* line 63, ../scss/_search.scss */
+.search_field_container .submit_search {
+  right: 100%;
+  margin-right: -46.5px;
+  position: absolute;
+  top: 26px;
+  cursor: pointer;
+}
+/* line 71, ../scss/_search.scss */
 .search_field_container .input_spinner {
   left: 100%;
   margin-left: -45px;
@@ -77,9 +77,48 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* line 8, ../scss/style.scss */
+.hcenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 15, ../scss/style.scss */
+.title {
+  margin-top: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 330px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial;
+  text-decoration: none;
+  color: #CCCCCC;
+}
+
+/* line 31, ../scss/style.scss */
+.center-area {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+}
+
+/* line 40, ../scss/style.scss */
 .search_results {
   background-color: #fff;
   padding: 10em;
   border: 1px solid black;
   display: none;
+}
+
+/* line 47, ../scss/style.scss */
+.shadow {
+  -moz-box-shadow: inset 0 0 10px #ccc;
+  -webkit-box-shadow: inset 0 0 10px #ccc;
+  box-shadow: inset 0 0 10px #ccc;
+}
+
+/* line 53, ../scss/style.scss */
+.txt-shadow {
+  text-shadow: -1px -1px white, 1px 1px #333333;
 }
