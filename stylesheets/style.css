@@ -48,9 +48,9 @@ input[type="search"]::-webkit-search-cancel-button {
 /* line 55, ../scss/_search.scss */
 .search_field_container .clear_search {
   left: 100%;
-  margin-left: -47.5px;
+  margin-left: -48px;
   position: absolute;
-  top: 28px;
+  top: 23px;
   cursor: pointer;
 }
 /* line 63, ../scss/_search.scss */
