@@ -50,7 +50,7 @@ input[type="search"]::-webkit-search-cancel-button {
   left: 100%;
   margin-left: -47.5px;
   position: absolute;
-  top: 26px;
+  top: 28px;
   cursor: pointer;
 }
 /* line 63, ../scss/_search.scss */
@@ -58,7 +58,7 @@ input[type="search"]::-webkit-search-cancel-button {
   right: 100%;
   margin-right: -46.5px;
   position: absolute;
-  top: 26px;
+  top: 27px;
   cursor: pointer;
 }
 /* line 71, ../scss/_search.scss */
